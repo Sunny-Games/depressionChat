@@ -1,0 +1,24 @@
+PODS:
+  - FTImageSize (0.0.4)
+  - FTIndicator (1.2.0):
+    - FTIndicator/FTNotificationIndicator (= 1.2.0)
+    - FTIndicator/FTProgressIndicator (= 1.2.0)
+    - FTIndicator/FTToastIndicator (= 1.2.0)
+  - FTIndicator/FTNotificationIndicator (1.2.0)
+  - FTIndicator/FTProgressIndicator (1.2.0)
+  - FTIndicator/FTToastIndicator (1.2.0)
+  - Kingfisher (3.10.1)
+
+DEPENDENCIES:
+  - FTImageSize
+  - FTIndicator
+  - Kingfisher
+
+SPEC CHECKSUMS:
+  FTImageSize: 29c6fc0830dbe33973286148a8e32cd582a9f26d
+  FTIndicator: e1c035b99b8df1b1a40702b37cdc12fac5dd057c
+  Kingfisher: 33a1b82140fcb14a9fc13f78dfde2a03ff8de8cb
+
+PODFILE CHECKSUM: 207cb5eba965ef77f1d65dfb7052722f36cc99af
+
+COCOAPODS: 1.2.0

@@ -8,20 +8,72 @@
 
 /* Begin PBXBuildFile section */
 		C9EBA9EE1EF27CE10039FB9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA9ED1EF27CE10039FB9C /* AppDelegate.swift */; };
-		C9EBA9F01EF27CE10039FB9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA9EF1EF27CE10039FB9C /* ViewController.swift */; };
 		C9EBA9F31EF27CE10039FB9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA9F11EF27CE10039FB9C /* Main.storyboard */; };
 		C9EBA9F51EF27CE10039FB9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA9F41EF27CE10039FB9C /* Assets.xcassets */; };
 		C9EBA9F81EF27CE10039FB9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA9F61EF27CE10039FB9C /* LaunchScreen.storyboard */; };
+		C9EBAA001EF28ECF0039FB9C /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA9FF1EF28ECF0039FB9C /* ChatTableViewController.swift */; };
+		C9EBAA021EF28EFC0039FB9C /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA011EF28EFC0039FB9C /* ChatRoomTableViewCell.swift */; };
+		C9EBAA1E1EF28F0E0039FB9C /* FTChatMessageBubbleAudioItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA061EF28F0E0039FB9C /* FTChatMessageBubbleAudioItem.swift */; };
+		C9EBAA1F1EF28F0E0039FB9C /* FTChatMessageBubbleImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA071EF28F0E0039FB9C /* FTChatMessageBubbleImageItem.swift */; };
+		C9EBAA201EF28F0E0039FB9C /* FTChatMessageBubbleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA081EF28F0E0039FB9C /* FTChatMessageBubbleItem.swift */; };
+		C9EBAA211EF28F0E0039FB9C /* FTChatMessageBubbleLocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA091EF28F0E0039FB9C /* FTChatMessageBubbleLocationItem.swift */; };
+		C9EBAA221EF28F0E0039FB9C /* FTChatMessageBubbleTextItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA0A1EF28F0E0039FB9C /* FTChatMessageBubbleTextItem.swift */; };
+		C9EBAA231EF28F0E0039FB9C /* FTChatMessageBubbleVideoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA0B1EF28F0E0039FB9C /* FTChatMessageBubbleVideoItem.swift */; };
+		C9EBAA241EF28F0E0039FB9C /* FTChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA0C1EF28F0E0039FB9C /* FTChatMessageCell.swift */; };
+		C9EBAA251EF28F0E0039FB9C /* FTChatMessageDeliverStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA0D1EF28F0E0039FB9C /* FTChatMessageDeliverStatusView.swift */; };
+		C9EBAA261EF28F0E0039FB9C /* FTChatMessageConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA0E1EF28F0E0039FB9C /* FTChatMessageConversation.swift */; };
+		C9EBAA271EF28F0E0039FB9C /* FTChatMessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA0F1EF28F0E0039FB9C /* FTChatMessageDataSource.swift */; };
+		C9EBAA281EF28F0E0039FB9C /* FTChatMessageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA101EF28F0E0039FB9C /* FTChatMessageDelegate.swift */; };
+		C9EBAA291EF28F0E0039FB9C /* FTChatMessageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA111EF28F0E0039FB9C /* FTChatMessageExtensions.swift */; };
+		C9EBAA2A1EF28F0E0039FB9C /* FTChatMessageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA131EF28F0E0039FB9C /* FTChatMessageHeader.swift */; };
+		C9EBAA2B1EF28F0E0039FB9C /* FTChatMessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA151EF28F0E0039FB9C /* FTChatMessageInputView.swift */; };
+		C9EBAA2C1EF28F0E0039FB9C /* FTChatMessageInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9EBAA161EF28F0E0039FB9C /* FTChatMessageInputView.xib */; };
+		C9EBAA2D1EF28F0E0039FB9C /* FTChatMessageRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA171EF28F0E0039FB9C /* FTChatMessageRecorderView.swift */; };
+		C9EBAA2E1EF28F0E0039FB9C /* FTChatMessageRecorderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9EBAA181EF28F0E0039FB9C /* FTChatMessageRecorderView.xib */; };
+		C9EBAA2F1EF28F0E0039FB9C /* FTChatMessageMarcos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA191EF28F0E0039FB9C /* FTChatMessageMarcos.swift */; };
+		C9EBAA301EF28F0E0039FB9C /* FTChatMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA1A1EF28F0E0039FB9C /* FTChatMessageModel.swift */; };
+		C9EBAA311EF28F0E0039FB9C /* FTChatMessageTableViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA1B1EF28F0E0039FB9C /* FTChatMessageTableViewController+DataSource.swift */; };
+		C9EBAA321EF28F0E0039FB9C /* FTChatMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA1C1EF28F0E0039FB9C /* FTChatMessageTableViewController.swift */; };
+		C9EBAA331EF28F0E0039FB9C /* FTChatMessageUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA1D1EF28F0E0039FB9C /* FTChatMessageUserModel.swift */; };
+		C9EBAA351EF28F200039FB9C /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EBAA341EF28F200039FB9C /* dog.jpg */; };
+		D95F187A78E98893EEE6A227 /* Pods_DepressionChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB97365B4C1392DDB5063F7 /* Pods_DepressionChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29A3AFF333CF3AC178DA81A5 /* Pods-DepressionChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DepressionChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DepressionChat/Pods-DepressionChat.debug.xcconfig"; sourceTree = "<group>"; };
+		5DB97365B4C1392DDB5063F7 /* Pods_DepressionChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DepressionChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F9F3DE102B2DA20A2633529 /* Pods-DepressionChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DepressionChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-DepressionChat/Pods-DepressionChat.release.xcconfig"; sourceTree = "<group>"; };
 		C9EBA9EA1EF27CE10039FB9C /* DepressionChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DepressionChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EBA9ED1EF27CE10039FB9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9EBA9EF1EF27CE10039FB9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C9EBA9F21EF27CE10039FB9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9EBA9F41EF27CE10039FB9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9EBA9F71EF27CE10039FB9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9EBA9F91EF27CE10039FB9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9EBA9FF1EF28ECF0039FB9C /* ChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
+		C9EBAA011EF28EFC0039FB9C /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
+		C9EBAA061EF28F0E0039FB9C /* FTChatMessageBubbleAudioItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageBubbleAudioItem.swift; sourceTree = "<group>"; };
+		C9EBAA071EF28F0E0039FB9C /* FTChatMessageBubbleImageItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageBubbleImageItem.swift; sourceTree = "<group>"; };
+		C9EBAA081EF28F0E0039FB9C /* FTChatMessageBubbleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageBubbleItem.swift; sourceTree = "<group>"; };
+		C9EBAA091EF28F0E0039FB9C /* FTChatMessageBubbleLocationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageBubbleLocationItem.swift; sourceTree = "<group>"; };
+		C9EBAA0A1EF28F0E0039FB9C /* FTChatMessageBubbleTextItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageBubbleTextItem.swift; sourceTree = "<group>"; };
+		C9EBAA0B1EF28F0E0039FB9C /* FTChatMessageBubbleVideoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageBubbleVideoItem.swift; sourceTree = "<group>"; };
+		C9EBAA0C1EF28F0E0039FB9C /* FTChatMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageCell.swift; sourceTree = "<group>"; };
+		C9EBAA0D1EF28F0E0039FB9C /* FTChatMessageDeliverStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageDeliverStatusView.swift; sourceTree = "<group>"; };
+		C9EBAA0E1EF28F0E0039FB9C /* FTChatMessageConversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageConversation.swift; sourceTree = "<group>"; };
+		C9EBAA0F1EF28F0E0039FB9C /* FTChatMessageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageDataSource.swift; sourceTree = "<group>"; };
+		C9EBAA101EF28F0E0039FB9C /* FTChatMessageDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageDelegate.swift; sourceTree = "<group>"; };
+		C9EBAA111EF28F0E0039FB9C /* FTChatMessageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageExtensions.swift; sourceTree = "<group>"; };
+		C9EBAA131EF28F0E0039FB9C /* FTChatMessageHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageHeader.swift; sourceTree = "<group>"; };
+		C9EBAA151EF28F0E0039FB9C /* FTChatMessageInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageInputView.swift; sourceTree = "<group>"; };
+		C9EBAA161EF28F0E0039FB9C /* FTChatMessageInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTChatMessageInputView.xib; sourceTree = "<group>"; };
+		C9EBAA171EF28F0E0039FB9C /* FTChatMessageRecorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageRecorderView.swift; sourceTree = "<group>"; };
+		C9EBAA181EF28F0E0039FB9C /* FTChatMessageRecorderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTChatMessageRecorderView.xib; sourceTree = "<group>"; };
+		C9EBAA191EF28F0E0039FB9C /* FTChatMessageMarcos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageMarcos.swift; sourceTree = "<group>"; };
+		C9EBAA1A1EF28F0E0039FB9C /* FTChatMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageModel.swift; sourceTree = "<group>"; };
+		C9EBAA1B1EF28F0E0039FB9C /* FTChatMessageTableViewController+DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FTChatMessageTableViewController+DataSource.swift"; sourceTree = "<group>"; };
+		C9EBAA1C1EF28F0E0039FB9C /* FTChatMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageTableViewController.swift; sourceTree = "<group>"; };
+		C9EBAA1D1EF28F0E0039FB9C /* FTChatMessageUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageUserModel.swift; sourceTree = "<group>"; };
+		C9EBAA341EF28F200039FB9C /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95F187A78E98893EEE6A227 /* Pods_DepressionChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +93,8 @@
 			children = (
 				C9EBA9EC1EF27CE10039FB9C /* DepressionChat */,
 				C9EBA9EB1EF27CE10039FB9C /* Products */,
+				F3103964D13634CBE4FB43A1 /* Pods */,
+				D52A409F9B5A9A7D67EEAA36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +110,94 @@
 			isa = PBXGroup;
 			children = (
 				C9EBA9ED1EF27CE10039FB9C /* AppDelegate.swift */,
-				C9EBA9EF1EF27CE10039FB9C /* ViewController.swift */,
+				C9EBA9FF1EF28ECF0039FB9C /* ChatTableViewController.swift */,
+				C9EBAA011EF28EFC0039FB9C /* ChatRoomTableViewCell.swift */,
+				C9EBAA031EF28F0E0039FB9C /* FTChatMessage */,
 				C9EBA9F11EF27CE10039FB9C /* Main.storyboard */,
 				C9EBA9F41EF27CE10039FB9C /* Assets.xcassets */,
 				C9EBA9F61EF27CE10039FB9C /* LaunchScreen.storyboard */,
+				C9EBAA341EF28F200039FB9C /* dog.jpg */,
 				C9EBA9F91EF27CE10039FB9C /* Info.plist */,
 			);
 			path = DepressionChat;
+			sourceTree = "<group>";
+		};
+		C9EBAA031EF28F0E0039FB9C /* FTChatMessage */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBAA041EF28F0E0039FB9C /* FTChatMessageCell */,
+				C9EBAA0E1EF28F0E0039FB9C /* FTChatMessageConversation.swift */,
+				C9EBAA0F1EF28F0E0039FB9C /* FTChatMessageDataSource.swift */,
+				C9EBAA101EF28F0E0039FB9C /* FTChatMessageDelegate.swift */,
+				C9EBAA111EF28F0E0039FB9C /* FTChatMessageExtensions.swift */,
+				C9EBAA121EF28F0E0039FB9C /* FTChatMessageHeader */,
+				C9EBAA141EF28F0E0039FB9C /* FTChatMessageInput */,
+				C9EBAA191EF28F0E0039FB9C /* FTChatMessageMarcos.swift */,
+				C9EBAA1A1EF28F0E0039FB9C /* FTChatMessageModel.swift */,
+				C9EBAA1B1EF28F0E0039FB9C /* FTChatMessageTableViewController+DataSource.swift */,
+				C9EBAA1C1EF28F0E0039FB9C /* FTChatMessageTableViewController.swift */,
+				C9EBAA1D1EF28F0E0039FB9C /* FTChatMessageUserModel.swift */,
+			);
+			path = FTChatMessage;
+			sourceTree = "<group>";
+		};
+		C9EBAA041EF28F0E0039FB9C /* FTChatMessageCell */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBAA051EF28F0E0039FB9C /* FTChatMessageBubbleItem */,
+				C9EBAA0C1EF28F0E0039FB9C /* FTChatMessageCell.swift */,
+				C9EBAA0D1EF28F0E0039FB9C /* FTChatMessageDeliverStatusView.swift */,
+			);
+			path = FTChatMessageCell;
+			sourceTree = "<group>";
+		};
+		C9EBAA051EF28F0E0039FB9C /* FTChatMessageBubbleItem */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBAA061EF28F0E0039FB9C /* FTChatMessageBubbleAudioItem.swift */,
+				C9EBAA071EF28F0E0039FB9C /* FTChatMessageBubbleImageItem.swift */,
+				C9EBAA081EF28F0E0039FB9C /* FTChatMessageBubbleItem.swift */,
+				C9EBAA091EF28F0E0039FB9C /* FTChatMessageBubbleLocationItem.swift */,
+				C9EBAA0A1EF28F0E0039FB9C /* FTChatMessageBubbleTextItem.swift */,
+				C9EBAA0B1EF28F0E0039FB9C /* FTChatMessageBubbleVideoItem.swift */,
+			);
+			path = FTChatMessageBubbleItem;
+			sourceTree = "<group>";
+		};
+		C9EBAA121EF28F0E0039FB9C /* FTChatMessageHeader */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBAA131EF28F0E0039FB9C /* FTChatMessageHeader.swift */,
+			);
+			path = FTChatMessageHeader;
+			sourceTree = "<group>";
+		};
+		C9EBAA141EF28F0E0039FB9C /* FTChatMessageInput */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBAA151EF28F0E0039FB9C /* FTChatMessageInputView.swift */,
+				C9EBAA161EF28F0E0039FB9C /* FTChatMessageInputView.xib */,
+				C9EBAA171EF28F0E0039FB9C /* FTChatMessageRecorderView.swift */,
+				C9EBAA181EF28F0E0039FB9C /* FTChatMessageRecorderView.xib */,
+			);
+			path = FTChatMessageInput;
+			sourceTree = "<group>";
+		};
+		D52A409F9B5A9A7D67EEAA36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DB97365B4C1392DDB5063F7 /* Pods_DepressionChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3103964D13634CBE4FB43A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29A3AFF333CF3AC178DA81A5 /* Pods-DepressionChat.debug.xcconfig */,
+				9F9F3DE102B2DA20A2633529 /* Pods-DepressionChat.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9EBA9FC1EF27CE10039FB9C /* Build configuration list for PBXNativeTarget "DepressionChat" */;
 			buildPhases = (
+				6CDC38D6A221869D6B1F7A34 /* [CP] Check Pods Manifest.lock */,
 				C9EBA9E61EF27CE10039FB9C /* Sources */,
 				C9EBA9E71EF27CE10039FB9C /* Frameworks */,
 				C9EBA9E81EF27CE10039FB9C /* Resources */,
+				0D74DA7705DDA14A4654357B /* [CP] Embed Pods Frameworks */,
+				8A0F27CAD132D783550A4E3A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,7 +263,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EBAA351EF28F200039FB9C /* dog.jpg in Resources */,
+				C9EBAA2E1EF28F0E0039FB9C /* FTChatMessageRecorderView.xib in Resources */,
 				C9EBA9F81EF27CE10039FB9C /* LaunchScreen.storyboard in Resources */,
+				C9EBAA2C1EF28F0E0039FB9C /* FTChatMessageInputView.xib in Resources */,
 				C9EBA9F51EF27CE10039FB9C /* Assets.xcassets in Resources */,
 				C9EBA9F31EF27CE10039FB9C /* Main.storyboard in Resources */,
 			);
@@ -132,13 +274,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D74DA7705DDA14A4654357B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DepressionChat/Pods-DepressionChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CDC38D6A221869D6B1F7A34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A0F27CAD132D783550A4E3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DepressionChat/Pods-DepressionChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9EBA9E61EF27CE10039FB9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9EBA9F01EF27CE10039FB9C /* ViewController.swift in Sources */,
+				C9EBAA331EF28F0E0039FB9C /* FTChatMessageUserModel.swift in Sources */,
+				C9EBAA211EF28F0E0039FB9C /* FTChatMessageBubbleLocationItem.swift in Sources */,
+				C9EBAA271EF28F0E0039FB9C /* FTChatMessageDataSource.swift in Sources */,
+				C9EBAA281EF28F0E0039FB9C /* FTChatMessageDelegate.swift in Sources */,
+				C9EBAA321EF28F0E0039FB9C /* FTChatMessageTableViewController.swift in Sources */,
+				C9EBAA2B1EF28F0E0039FB9C /* FTChatMessageInputView.swift in Sources */,
+				C9EBAA2D1EF28F0E0039FB9C /* FTChatMessageRecorderView.swift in Sources */,
+				C9EBAA221EF28F0E0039FB9C /* FTChatMessageBubbleTextItem.swift in Sources */,
 				C9EBA9EE1EF27CE10039FB9C /* AppDelegate.swift in Sources */,
+				C9EBAA251EF28F0E0039FB9C /* FTChatMessageDeliverStatusView.swift in Sources */,
+				C9EBAA311EF28F0E0039FB9C /* FTChatMessageTableViewController+DataSource.swift in Sources */,
+				C9EBAA1E1EF28F0E0039FB9C /* FTChatMessageBubbleAudioItem.swift in Sources */,
+				C9EBAA1F1EF28F0E0039FB9C /* FTChatMessageBubbleImageItem.swift in Sources */,
+				C9EBAA241EF28F0E0039FB9C /* FTChatMessageCell.swift in Sources */,
+				C9EBAA021EF28EFC0039FB9C /* ChatRoomTableViewCell.swift in Sources */,
+				C9EBAA261EF28F0E0039FB9C /* FTChatMessageConversation.swift in Sources */,
+				C9EBAA291EF28F0E0039FB9C /* FTChatMessageExtensions.swift in Sources */,
+				C9EBAA2A1EF28F0E0039FB9C /* FTChatMessageHeader.swift in Sources */,
+				C9EBAA301EF28F0E0039FB9C /* FTChatMessageModel.swift in Sources */,
+				C9EBAA2F1EF28F0E0039FB9C /* FTChatMessageMarcos.swift in Sources */,
+				C9EBAA231EF28F0E0039FB9C /* FTChatMessageBubbleVideoItem.swift in Sources */,
+				C9EBAA201EF28F0E0039FB9C /* FTChatMessageBubbleItem.swift in Sources */,
+				C9EBAA001EF28ECF0039FB9C /* ChatTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +470,7 @@
 		};
 		C9EBA9FD1EF27CE10039FB9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29A3AFF333CF3AC178DA81A5 /* Pods-DepressionChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NW4B2RFZ4C;
@@ -272,6 +484,7 @@
 		};
 		C9EBA9FE1EF27CE10039FB9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F9F3DE102B2DA20A2633529 /* Pods-DepressionChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NW4B2RFZ4C;
@@ -302,6 +515,7 @@
 				C9EBA9FE1EF27CE10039FB9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

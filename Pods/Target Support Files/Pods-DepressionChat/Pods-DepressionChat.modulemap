@@ -1,0 +1,6 @@
+framework module Pods_DepressionChat {
+  umbrella header "Pods-DepressionChat-umbrella.h"
+
+  export *
+  module * { export * }
+}
