@@ -13,9 +13,10 @@ extension FTChatMessageTableViewController{
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     
-    NotificationCenter.default.addObserver(self, selector: #selector(self.keyboradWillChangeFrame(_:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
     NotificationCenter.default.addObserver(self, selector: #selector(self.didChangeStatusBar(_:)), name: NSNotification.Name.UIApplicationDidChangeStatusBarOrientation, object: nil)
     
+    NotificationCenter.default.addObserver(self, selector: #selector(keyboradWillChangeFrame(_:)), name: Foundation.Notification.Name.UIKeyboardWillShow, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(keyboradWillChangeFrame(_:)), name: Foundation.Notification.Name.UIKeyboardWillHide, object: nil)
     
   }
   override func viewWillDisappear(_ animated: Bool) {
@@ -52,26 +53,24 @@ extension FTChatMessageTableViewController{
   
   @objc fileprivate func keyboradWillChangeFrame(_ notification: Notification) {
     
-    if messageInputMode == FTChatMessageInputMode.keyboard {
-      if let userInfo = (notification as NSNotification).userInfo {
-        let duration = (userInfo["UIKeyboardAnimationDurationUserInfoKey"]! as AnyObject).doubleValue
-        let keyFrame : CGRect = (userInfo["UIKeyboardFrameEndUserInfoKey"]! as AnyObject).cgRectValue
-        let keyboradOriginY = min(keyFrame.origin.y, FTScreenHeight)
-        let inputBarHeight = messageInputView.frame.height
-        
-        
-        UIView.animate(withDuration: duration!, animations: {
-          self.messageTableView.frame = CGRect(x: 0 , y: 0 , width: FTScreenWidth, height: keyboradOriginY)
-          self.messageInputView.frame = CGRect(x: 0, y: keyboradOriginY - inputBarHeight, width: FTScreenWidth, height: inputBarHeight)
-          self.scrollToBottom(true)
-        }, completion: { (finished) in
-          if finished {
-            if self.messageInputView.inputTextView.isFirstResponder {
-              self.dismissInputRecordView()
-            }
+    if let userInfo = (notification as NSNotification).userInfo {
+      let duration = (userInfo["UIKeyboardAnimationDurationUserInfoKey"]! as AnyObject).doubleValue
+      let keyFrame : CGRect = (userInfo["UIKeyboardFrameEndUserInfoKey"]! as AnyObject).cgRectValue
+      let keyboradOriginY = min(keyFrame.origin.y, FTScreenHeight)
+      let inputBarHeight = messageInputView.frame.height
+      
+      
+      UIView.animate(withDuration: duration!, animations: {
+        self.messageTableView.frame = CGRect(x: 0 , y: 64 , width: FTScreenWidth, height: keyboradOriginY - 64)
+        self.messageInputView.frame = CGRect(x: 0, y: keyboradOriginY - inputBarHeight, width: FTScreenWidth, height: inputBarHeight)
+        self.scrollToBottom(true)
+      }, completion: { (finished) in
+        if finished {
+          if self.messageInputView.inputTextView.isFirstResponder {
+            self.dismissInputRecordView()
           }
-        })
-      }
+        }
+      })
     }
     
   }
@@ -100,7 +99,7 @@ extension FTChatMessageTableViewController{
     origin.origin.y = origin.origin.y + origin.size.height - desiredHeight;
     origin.size.height = desiredHeight;
     
-    messageTableView.frame = CGRect(x: 0, y: 0, width: FTScreenWidth, height: origin.origin.y + FTDefaultInputViewHeight)
+    messageTableView.frame = CGRect(x: 0, y: 64, width: FTScreenWidth, height: origin.origin.y + FTDefaultInputViewHeight - 64)
     messageInputView.frame = origin
     self.scrollToBottom(true)
     messageInputView.layoutIfNeeded()
@@ -118,7 +117,7 @@ extension FTChatMessageTableViewController{
       
       UIView.animate(withDuration: FTDefaultMessageDefaultAnimationDuration, animations: {
         
-        self.messageTableView.frame = CGRect(x: 0, y: 0, width: FTScreenWidth, height: FTScreenHeight - inputViewFrameHeight + FTDefaultInputViewHeight )
+        self.messageTableView.frame = CGRect(x: 0, y: 64, width: FTScreenWidth, height: FTScreenHeight - inputViewFrameHeight + FTDefaultInputViewHeight - 64)
         self.messageInputView.frame = CGRect(x: 0, y: FTScreenHeight - inputViewFrameHeight, width: FTScreenWidth, height: inputViewFrameHeight)
         self.messageRecordView.frame = CGRect(x: 0, y: FTScreenHeight, width: FTScreenWidth, height: FTDefaultAccessoryViewHeight)
         self.scrollToBottom(true)
@@ -136,7 +135,7 @@ extension FTChatMessageTableViewController{
       messageInputMode = FTChatMessageInputMode.record
       
       UIView.animate(withDuration: FTDefaultMessageDefaultAnimationDuration, animations: {
-        self.messageTableView.frame = CGRect(x: 0, y: 0, width: FTScreenWidth, height: FTScreenHeight - inputViewFrameHeight - FTDefaultAccessoryViewHeight + FTDefaultInputViewHeight )
+        self.messageTableView.frame = CGRect(x: 0, y: 64, width: FTScreenWidth, height: FTScreenHeight - inputViewFrameHeight - FTDefaultAccessoryViewHeight + FTDefaultInputViewHeight - 64)
         self.messageInputView.frame = CGRect(x: 0, y: FTScreenHeight - inputViewFrameHeight - FTDefaultAccessoryViewHeight, width: FTScreenWidth, height: inputViewFrameHeight)
         self.messageRecordView.frame = CGRect(x: 0, y: FTScreenHeight - FTDefaultAccessoryViewHeight, width: FTScreenWidth, height: FTDefaultAccessoryViewHeight)
         self.scrollToBottom(true)

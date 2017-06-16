@@ -9,4 +9,6 @@ target 'DepressionChat' do
   pod 'Kingfisher'
   pod 'FTIndicator'
   pod 'FTImageSize'
+  pod 'IQKeyboardManager'    , '~> 4.0.4'
+
 end

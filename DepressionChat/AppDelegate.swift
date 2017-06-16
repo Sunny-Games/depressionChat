@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import IQKeyboardManager
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+    
+    let keyboardManager = IQKeyboardManager.shared()
+    keyboardManager.isEnabled = true //Let keyboardManager can be used in the whole project
+    keyboardManager.shouldResignOnTouchOutside = true  //click background, keyboard can resign first responder
+    keyboardManager.shouldToolbarUsesTextFieldTintColor = true  //The color of toolbar on the keyboard can be changed
+    keyboardManager.isEnableAutoToolbar = false //The toolbar on the keyboard can be showed.
     
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.makeKeyAndVisible()
