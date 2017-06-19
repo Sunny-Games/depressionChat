@@ -53,25 +53,29 @@ extension FTChatMessageTableViewController{
   
   @objc fileprivate func keyboradWillChangeFrame(_ notification: Notification) {
     
-    if let userInfo = (notification as NSNotification).userInfo {
-      let duration = (userInfo["UIKeyboardAnimationDurationUserInfoKey"]! as AnyObject).doubleValue
-      let keyFrame : CGRect = (userInfo["UIKeyboardFrameEndUserInfoKey"]! as AnyObject).cgRectValue
-      let keyboradOriginY = min(keyFrame.origin.y, FTScreenHeight)
-      let inputBarHeight = messageInputView.frame.height
-      
-      
-      UIView.animate(withDuration: duration!, animations: {
-        self.messageTableView.frame = CGRect(x: 0 , y: 64 , width: FTScreenWidth, height: keyboradOriginY - 64)
-        self.messageInputView.frame = CGRect(x: 0, y: keyboradOriginY - inputBarHeight, width: FTScreenWidth, height: inputBarHeight)
-        self.scrollToBottom(true)
-      }, completion: { (finished) in
-        if finished {
-          if self.messageInputView.inputTextView.isFirstResponder {
-            self.dismissInputRecordView()
-          }
-        }
-      })
+    guard let keyFrame = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
+    
+    var duration: TimeInterval = 0.25
+    if let durationValue = notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? NSValue {
+      durationValue.getValue(&duration)
     }
+    
+    let keyboradOriginY = min(keyFrame.origin.y, FTScreenHeight)
+    let inputBarHeight: CGFloat = 44
+    
+    let newInOy = keyboradOriginY - inputBarHeight    
+    UIView.animate(withDuration: duration, animations: {
+      self.messageTableView.frame = CGRect(x: 0 , y: 64 , width: FTScreenWidth, height: keyboradOriginY - 64)
+      self.messageInputView.frame = CGRect(x: 0, y: newInOy, width: FTScreenWidth, height: inputBarHeight)
+      self.scrollToBottom(true)
+    }, completion: { (finished) in
+      if finished {
+        if self.messageInputView.inputTextView.isFirstResponder {
+          self.dismissInputRecordView()
+        }
+      }
+    })
+    
     
   }
   
@@ -104,11 +108,13 @@ extension FTChatMessageTableViewController{
     self.scrollToBottom(true)
     messageInputView.layoutIfNeeded()
   }
+  
   internal func ft_chatMessageInputViewShouldDoneWithText(_ textString: String) {
-    let message8 = FTChatMessageModel(data: textString, time: "4.12 22:42", from: sender2, type: .text)
-    self.addNewMessage(message8)
+    let message8 = FTChatMessageModel(data: textString, time: "4.12 22:42", from: customer, type: .text)
+    self.customerAddNewMessage(message8)
     
   }
+  
   internal func ft_chatMessageInputViewShouldShowRecordView(){
     let originMode = messageInputMode
     let inputViewFrameHeight = self.messageInputView.frame.size.height
@@ -210,15 +216,4 @@ extension FTChatMessageTableViewController{
     print("tapped at user icon : \(messageSenderModel.senderName!)")
     
   }
-  
-  //    //MARK: - preferredInterfaceOrientationForPresentation -
-  //
-  //    override var preferredInterfaceOrientationForPresentation : UIInterfaceOrientation {
-  //        return UIInterfaceOrientation.portrait
-  //    }
-  //
-  //    //MARK: - supportedInterfaceOrientations -
-  //    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-  //        return UIInterfaceOrientationMask.portrait
-  //    }
 }

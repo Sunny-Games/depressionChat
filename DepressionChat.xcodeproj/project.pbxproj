@@ -7,10 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C999F7EC1EF79F5000A8D742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C999F7E51EF79F5000A8D742 /* Assets.xcassets */; };
+		C999F7ED1EF79F5000A8D742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C999F7E61EF79F5000A8D742 /* LaunchScreen.storyboard */; };
+		C999F7EE1EF79F5000A8D742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C999F7E81EF79F5000A8D742 /* Main.storyboard */; };
+		C999F7F01EF79F5000A8D742 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C999F7EB1EF79F5000A8D742 /* Info.plist */; };
+		C999F7F71EF7A1E000A8D742 /* quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = C999F7F61EF7A1E000A8D742 /* quotes.txt */; };
+		C999F8061EF7C4E300A8D742 /* pet1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C999F7FA1EF7C4E300A8D742 /* pet1.jpg */; };
+		C999F8071EF7C4E300A8D742 /* pet2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C999F7FB1EF7C4E300A8D742 /* pet2.jpg */; };
+		C999F8081EF7C4E300A8D742 /* pet3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C999F7FC1EF7C4E300A8D742 /* pet3.jpg */; };
+		C999F8091EF7C4E300A8D742 /* pet4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C999F7FD1EF7C4E300A8D742 /* pet4.jpg */; };
+		C999F80A1EF7C4E300A8D742 /* pet5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C999F7FE1EF7C4E300A8D742 /* pet5.jpg */; };
+		C999F80B1EF7C4E300A8D742 /* pet6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C999F7FF1EF7C4E300A8D742 /* pet6.jpg */; };
+		C999F80C1EF7C4E300A8D742 /* pet7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C999F8001EF7C4E300A8D742 /* pet7.jpg */; };
+		C999F80D1EF7C4E300A8D742 /* pet8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C999F8011EF7C4E300A8D742 /* pet8.jpg */; };
+		C999F80E1EF7C4E300A8D742 /* pet9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C999F8021EF7C4E300A8D742 /* pet9.jpg */; };
+		C999F80F1EF7C4E300A8D742 /* pet10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C999F8031EF7C4E300A8D742 /* pet10.jpg */; };
+		C999F8101EF7C4E300A8D742 /* quote1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C999F8041EF7C4E300A8D742 /* quote1.jpg */; };
+		C999F8111EF7C4E300A8D742 /* quote2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C999F8051EF7C4E300A8D742 /* quote2.jpg */; };
 		C9EBA9EE1EF27CE10039FB9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA9ED1EF27CE10039FB9C /* AppDelegate.swift */; };
-		C9EBA9F31EF27CE10039FB9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA9F11EF27CE10039FB9C /* Main.storyboard */; };
-		C9EBA9F51EF27CE10039FB9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA9F41EF27CE10039FB9C /* Assets.xcassets */; };
-		C9EBA9F81EF27CE10039FB9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA9F61EF27CE10039FB9C /* LaunchScreen.storyboard */; };
 		C9EBAA001EF28ECF0039FB9C /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA9FF1EF28ECF0039FB9C /* ChatTableViewController.swift */; };
 		C9EBAA021EF28EFC0039FB9C /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA011EF28EFC0039FB9C /* ChatRoomTableViewCell.swift */; };
 		C9EBAA1E1EF28F0E0039FB9C /* FTChatMessageBubbleAudioItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA061EF28F0E0039FB9C /* FTChatMessageBubbleAudioItem.swift */; };
@@ -35,7 +49,6 @@
 		C9EBAA311EF28F0E0039FB9C /* FTChatMessageTableViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA1B1EF28F0E0039FB9C /* FTChatMessageTableViewController+DataSource.swift */; };
 		C9EBAA321EF28F0E0039FB9C /* FTChatMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA1C1EF28F0E0039FB9C /* FTChatMessageTableViewController.swift */; };
 		C9EBAA331EF28F0E0039FB9C /* FTChatMessageUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAA1D1EF28F0E0039FB9C /* FTChatMessageUserModel.swift */; };
-		C9EBAA351EF28F200039FB9C /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EBAA341EF28F200039FB9C /* dog.jpg */; };
 		D95F187A78E98893EEE6A227 /* Pods_DepressionChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB97365B4C1392DDB5063F7 /* Pods_DepressionChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,12 +56,25 @@
 		29A3AFF333CF3AC178DA81A5 /* Pods-DepressionChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DepressionChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DepressionChat/Pods-DepressionChat.debug.xcconfig"; sourceTree = "<group>"; };
 		5DB97365B4C1392DDB5063F7 /* Pods_DepressionChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DepressionChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9F3DE102B2DA20A2633529 /* Pods-DepressionChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DepressionChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-DepressionChat/Pods-DepressionChat.release.xcconfig"; sourceTree = "<group>"; };
+		C999F7E51EF79F5000A8D742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C999F7E71EF79F5000A8D742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C999F7E91EF79F5000A8D742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C999F7EB1EF79F5000A8D742 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C999F7F61EF7A1E000A8D742 /* quotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quotes.txt; sourceTree = "<group>"; };
+		C999F7FA1EF7C4E300A8D742 /* pet1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pet1.jpg; sourceTree = "<group>"; };
+		C999F7FB1EF7C4E300A8D742 /* pet2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pet2.jpg; sourceTree = "<group>"; };
+		C999F7FC1EF7C4E300A8D742 /* pet3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pet3.jpg; sourceTree = "<group>"; };
+		C999F7FD1EF7C4E300A8D742 /* pet4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pet4.jpg; sourceTree = "<group>"; };
+		C999F7FE1EF7C4E300A8D742 /* pet5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pet5.jpg; sourceTree = "<group>"; };
+		C999F7FF1EF7C4E300A8D742 /* pet6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pet6.jpg; sourceTree = "<group>"; };
+		C999F8001EF7C4E300A8D742 /* pet7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pet7.jpg; sourceTree = "<group>"; };
+		C999F8011EF7C4E300A8D742 /* pet8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pet8.jpg; sourceTree = "<group>"; };
+		C999F8021EF7C4E300A8D742 /* pet9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pet9.jpg; sourceTree = "<group>"; };
+		C999F8031EF7C4E300A8D742 /* pet10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pet10.jpg; sourceTree = "<group>"; };
+		C999F8041EF7C4E300A8D742 /* quote1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = quote1.jpg; sourceTree = "<group>"; };
+		C999F8051EF7C4E300A8D742 /* quote2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = quote2.jpg; sourceTree = "<group>"; };
 		C9EBA9EA1EF27CE10039FB9C /* DepressionChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DepressionChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EBA9ED1EF27CE10039FB9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9EBA9F21EF27CE10039FB9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C9EBA9F41EF27CE10039FB9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C9EBA9F71EF27CE10039FB9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C9EBA9F91EF27CE10039FB9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9EBA9FF1EF28ECF0039FB9C /* ChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
 		C9EBAA011EF28EFC0039FB9C /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
 		C9EBAA061EF28F0E0039FB9C /* FTChatMessageBubbleAudioItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageBubbleAudioItem.swift; sourceTree = "<group>"; };
@@ -73,7 +99,6 @@
 		C9EBAA1B1EF28F0E0039FB9C /* FTChatMessageTableViewController+DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FTChatMessageTableViewController+DataSource.swift"; sourceTree = "<group>"; };
 		C9EBAA1C1EF28F0E0039FB9C /* FTChatMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageTableViewController.swift; sourceTree = "<group>"; };
 		C9EBAA1D1EF28F0E0039FB9C /* FTChatMessageUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTChatMessageUserModel.swift; sourceTree = "<group>"; };
-		C9EBAA341EF28F200039FB9C /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +113,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C999F7E41EF79F5000A8D742 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				C999F7E51EF79F5000A8D742 /* Assets.xcassets */,
+				C999F7F11EF79FC900A8D742 /* images */,
+				C999F7E61EF79F5000A8D742 /* LaunchScreen.storyboard */,
+				C999F7E81EF79F5000A8D742 /* Main.storyboard */,
+				C999F7EB1EF79F5000A8D742 /* Info.plist */,
+				C999F7F61EF7A1E000A8D742 /* quotes.txt */,
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		C999F7F11EF79FC900A8D742 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C999F7FA1EF7C4E300A8D742 /* pet1.jpg */,
+				C999F7FB1EF7C4E300A8D742 /* pet2.jpg */,
+				C999F7FC1EF7C4E300A8D742 /* pet3.jpg */,
+				C999F7FD1EF7C4E300A8D742 /* pet4.jpg */,
+				C999F7FE1EF7C4E300A8D742 /* pet5.jpg */,
+				C999F7FF1EF7C4E300A8D742 /* pet6.jpg */,
+				C999F8001EF7C4E300A8D742 /* pet7.jpg */,
+				C999F8011EF7C4E300A8D742 /* pet8.jpg */,
+				C999F8021EF7C4E300A8D742 /* pet9.jpg */,
+				C999F8031EF7C4E300A8D742 /* pet10.jpg */,
+				C999F8041EF7C4E300A8D742 /* quote1.jpg */,
+				C999F8051EF7C4E300A8D742 /* quote2.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		C9EBA9E11EF27CE10039FB9C = {
 			isa = PBXGroup;
 			children = (
@@ -109,15 +166,11 @@
 		C9EBA9EC1EF27CE10039FB9C /* DepressionChat */ = {
 			isa = PBXGroup;
 			children = (
+				C9EBAA031EF28F0E0039FB9C /* FTChatMessage */,
 				C9EBA9ED1EF27CE10039FB9C /* AppDelegate.swift */,
 				C9EBA9FF1EF28ECF0039FB9C /* ChatTableViewController.swift */,
 				C9EBAA011EF28EFC0039FB9C /* ChatRoomTableViewCell.swift */,
-				C9EBAA031EF28F0E0039FB9C /* FTChatMessage */,
-				C9EBA9F11EF27CE10039FB9C /* Main.storyboard */,
-				C9EBA9F41EF27CE10039FB9C /* Assets.xcassets */,
-				C9EBA9F61EF27CE10039FB9C /* LaunchScreen.storyboard */,
-				C9EBAA341EF28F200039FB9C /* dog.jpg */,
-				C9EBA9F91EF27CE10039FB9C /* Info.plist */,
+				C999F7E41EF79F5000A8D742 /* Resouces */,
 			);
 			path = DepressionChat;
 			sourceTree = "<group>";
@@ -263,12 +316,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9EBAA351EF28F200039FB9C /* dog.jpg in Resources */,
+				C999F80B1EF7C4E300A8D742 /* pet6.jpg in Resources */,
+				C999F80C1EF7C4E300A8D742 /* pet7.jpg in Resources */,
+				C999F7ED1EF79F5000A8D742 /* LaunchScreen.storyboard in Resources */,
+				C999F8081EF7C4E300A8D742 /* pet3.jpg in Resources */,
+				C999F7F71EF7A1E000A8D742 /* quotes.txt in Resources */,
+				C999F8091EF7C4E300A8D742 /* pet4.jpg in Resources */,
+				C999F8101EF7C4E300A8D742 /* quote1.jpg in Resources */,
+				C999F80E1EF7C4E300A8D742 /* pet9.jpg in Resources */,
+				C999F80A1EF7C4E300A8D742 /* pet5.jpg in Resources */,
+				C999F80D1EF7C4E300A8D742 /* pet8.jpg in Resources */,
 				C9EBAA2E1EF28F0E0039FB9C /* FTChatMessageRecorderView.xib in Resources */,
-				C9EBA9F81EF27CE10039FB9C /* LaunchScreen.storyboard in Resources */,
+				C999F8061EF7C4E300A8D742 /* pet1.jpg in Resources */,
 				C9EBAA2C1EF28F0E0039FB9C /* FTChatMessageInputView.xib in Resources */,
-				C9EBA9F51EF27CE10039FB9C /* Assets.xcassets in Resources */,
-				C9EBA9F31EF27CE10039FB9C /* Main.storyboard in Resources */,
+				C999F8071EF7C4E300A8D742 /* pet2.jpg in Resources */,
+				C999F80F1EF7C4E300A8D742 /* pet10.jpg in Resources */,
+				C999F7EC1EF79F5000A8D742 /* Assets.xcassets in Resources */,
+				C999F8111EF7C4E300A8D742 /* quote2.jpg in Resources */,
+				C999F7EE1EF79F5000A8D742 /* Main.storyboard in Resources */,
+				C999F7F01EF79F5000A8D742 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,20 +422,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C9EBA9F11EF27CE10039FB9C /* Main.storyboard */ = {
+		C999F7E61EF79F5000A8D742 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C9EBA9F21EF27CE10039FB9C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C9EBA9F61EF27CE10039FB9C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9EBA9F71EF27CE10039FB9C /* Base */,
+				C999F7E71EF79F5000A8D742 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C999F7E81EF79F5000A8D742 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C999F7E91EF79F5000A8D742 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -474,7 +540,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NW4B2RFZ4C;
-				INFOPLIST_FILE = DepressionChat/Info.plist;
+				INFOPLIST_FILE = DepressionChat/Resouces/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Personal.DepressionChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -488,7 +554,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NW4B2RFZ4C;
-				INFOPLIST_FILE = DepressionChat/Info.plist;
+				INFOPLIST_FILE = DepressionChat/Resouces/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Personal.DepressionChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";

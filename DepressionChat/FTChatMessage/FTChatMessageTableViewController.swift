@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class FTChatMessageTableViewController: UIViewController, UITableViewDelegate,UITableViewDataSource, FTChatMessageInputViewDelegate, FTChatMessageHeaderDelegate {
   
   var chatMessageDataArray : [FTChatMessageModel] = [] {
@@ -20,9 +21,7 @@ class FTChatMessageTableViewController: UIViewController, UITableViewDelegate,UI
   var dataSource : FTChatMessageDataSource?
   var messageInputMode : FTChatMessageInputMode = FTChatMessageInputMode.none
   
-  let sender2 = FTChatMessageUserModel.init(id: "2", name: "LiuFengting", icon_url: "http://ww3.sinaimg.cn/mw600/9d319f9agw1f3k8e4pixfj20u00u0ac6.jpg", extra_data: nil, isSelf: true)
-  
-  
+
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -36,7 +35,7 @@ class FTChatMessageTableViewController: UIViewController, UITableViewDelegate,UI
     DispatchQueue.main.asyncAfter( deadline: DispatchTime.now() + Double(Int64(0.1 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)) {
       self.scrollToBottom(false)
     }
- 
+    
     
   }
   
@@ -76,14 +75,17 @@ class FTChatMessageTableViewController: UIViewController, UITableViewDelegate,UI
   }
   
   
-  internal func addNewMessage(_ message : FTChatMessageModel) {
-    
+  private func addNewMessage(_ message : FTChatMessageModel) {
     chatMessageDataArray.append(message);
-    
     self.origanizeAndReload()
-    
     self.scrollToBottom(true)
+  }
+  
+  internal func customerAddNewMessage(_ message : FTChatMessageModel) {
+    addNewMessage(message)
     
+    let reply = FTChatMessageModel(data: "", time: "4.12 21:09:51", from: replySender, type: .audio)
+    addNewMessage(reply)
   }
   
   func origanizeAndReload() {
