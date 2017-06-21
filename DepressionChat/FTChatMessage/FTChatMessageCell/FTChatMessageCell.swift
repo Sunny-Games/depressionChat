@@ -36,14 +36,10 @@ class FTChatMessageCell: UITableViewCell {
 
         message = theMessage
 
-        let heightSoFar : CGFloat = 0
+        let heightSoFar : CGFloat = -5
         var bubbleRect = CGRect.zero
 
-        
-        if indexPath.row == 0 {
-            self.addTimeLabel()
-        }
-        
+ 
         let y : CGFloat = heightSoFar
         let bubbleWidth : CGFloat = FTChatMessageBubbleItem.getMessageBubbleWidthForMessage(theMessage)
         let bubbleHeight : CGFloat = FTChatMessageBubbleItem.getMessageBubbleHeightForMessage(theMessage)
@@ -67,31 +63,7 @@ class FTChatMessageCell: UITableViewCell {
             self.addSendStatusView(bubbleFrame)
         }
     }
-    
-    //MARK: - addTimeLabel
-    func addTimeLabel() {
-        let timeLabelRect = CGRect(x: 0, y: -FTDefaultMessageCellTimeLabelHeight ,width: FTScreenWidth, height: FTDefaultMessageCellTimeLabelHeight);
-        messageTimeLabel.frame = timeLabelRect
-        messageTimeLabel.text = message.messageTimeStamp
-        self.addSubview(messageTimeLabel)
-    }
-    
-    //MARK: - addSenderLabel
-//    func addSenderLabel() {
-//        var nameLabelTextAlignment : NSTextAlignment = .right
-//        var nameLabelRect = CGRect( x: 0, y: -FTDefaultSectionHeight/2  , width: FTScreenWidth - (FTDefaultMargin + FTDefaultIconSize + FTDefaultMessageBubbleAngleWidth), height: FTDefaultSectionHeight/2)
-// 
-//        if message.isUserSelf == false {
-//            nameLabelRect.origin.x = FTDefaultMargin + FTDefaultIconSize + FTDefaultMessageBubbleAngleWidth
-//            nameLabelTextAlignment =  .left
-//        }
-//        
-//        messageSenderNameLabel.frame = nameLabelRect
-//        messageSenderNameLabel.text = message.messageSender.senderName
-//        messageSenderNameLabel.textAlignment = nameLabelTextAlignment
-//        self.addSubview(messageSenderNameLabel)
-//    }
-    
+ 
     //MARK: - addSendStatusView
     func addSendStatusView(_ bubbleFrame: CGRect) {
         let statusViewRect = CGRect(x: bubbleFrame.origin.x - FTDefaultMessageCellSendStatusViewSize - FTDefaultMargin, y: (bubbleFrame.origin.y + bubbleFrame.size.height - FTDefaultMessageCellSendStatusViewSize)/2, width: FTDefaultMessageCellSendStatusViewSize, height: FTDefaultMessageCellSendStatusViewSize)

@@ -21,7 +21,7 @@ class FTChatMessageTableViewController: UIViewController, UITableViewDelegate,UI
   var dataSource : FTChatMessageDataSource?
   var messageInputMode : FTChatMessageInputMode = FTChatMessageInputMode.none
   
-
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -84,8 +84,12 @@ class FTChatMessageTableViewController: UIViewController, UITableViewDelegate,UI
   internal func customerAddNewMessage(_ message : FTChatMessageModel) {
     addNewMessage(message)
     
-    let reply = FTChatMessageModel(data: "", time: "4.12 21:09:51", from: replySender, type: .audio)
+    let reply = findAReply(inMessage: message)
     addNewMessage(reply)
+  }
+  
+  func findAReply(inMessage: FTChatMessageModel) -> FTChatMessageModel {
+    return FTChatMessageModel()
   }
   
   func origanizeAndReload() {

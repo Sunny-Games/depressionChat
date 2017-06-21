@@ -8,20 +8,17 @@ PODS:
   - FTIndicator/FTProgressIndicator (1.2.0)
   - FTIndicator/FTToastIndicator (1.2.0)
   - IQKeyboardManager (4.0.10)
-  - Kingfisher (3.10.1)
 
 DEPENDENCIES:
   - FTImageSize
   - FTIndicator
   - IQKeyboardManager (~> 4.0.4)
-  - Kingfisher
 
 SPEC CHECKSUMS:
   FTImageSize: 29c6fc0830dbe33973286148a8e32cd582a9f26d
   FTIndicator: e1c035b99b8df1b1a40702b37cdc12fac5dd057c
   IQKeyboardManager: 593ee99b88381f4b9ccb22bd680f22606351bd41
-  Kingfisher: 33a1b82140fcb14a9fc13f78dfde2a03ff8de8cb
 
-PODFILE CHECKSUM: 617456e55e910eadb02300fd5adf791bd74a48fc
+PODFILE CHECKSUM: e64ab8528d01f99a0d55c48f68bfe103b1a2ea05
 
 COCOAPODS: 1.2.0

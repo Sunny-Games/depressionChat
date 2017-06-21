@@ -6,7 +6,6 @@ target 'DepressionChat' do
   use_frameworks!
 
   # Pods for DepressionChat
-  pod 'Kingfisher'
   pod 'FTIndicator'
   pod 'FTImageSize'
   pod 'IQKeyboardManager'    , '~> 4.0.4'

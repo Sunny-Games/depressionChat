@@ -55,6 +55,7 @@ class FTChatMessageRecorderView: UIView {
     func startRecording() {
 
     }
+  
     func stopRecording() {
         
         

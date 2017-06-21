@@ -12,7 +12,8 @@ class FTChatMessageBubbleAudioItem: FTChatMessageBubbleItem {
     
     var playImageView : UIImageView!
     var mediaInfoLabel : UILabel!
-    
+    var bubleFrame = CGRect.zero
+		
     convenience init(frame: CGRect, aMessage : FTChatMessageModel, for indexPath: IndexPath) {
         self.init(frame:frame)
         self.backgroundColor = UIColor.clear
@@ -44,16 +45,15 @@ class FTChatMessageBubbleAudioItem: FTChatMessageBubbleItem {
     }
     
     fileprivate func getAudioBubblePath(_ size:CGSize , isUserSelf : Bool) -> UIBezierPath {
-        let bubbleRect = CGRect(x: isUserSelf ? 0 : FTDefaultMessageBubbleAngleWidth, y: 0, width: size.width - FTDefaultMessageBubbleAngleWidth , height: size.height)
-        let path = UIBezierPath.init(roundedRect: bubbleRect, cornerRadius:  size.height/2)
+        bubleFrame = CGRect(x: !isUserSelf ? 0 : size.width - 120, y: 0, width: 120 , height: size.height)
+        let path = UIBezierPath.init(roundedRect: bubleFrame, cornerRadius:  size.height/2)
         return path;
     }
     
     fileprivate func getPlayImageViewFrame(_ isUserSelf : Bool) -> CGRect {
         let margin = (FTDefaultMessageBubbleAudioHeight - FTDefaultMessageBubbleAudioIconHeight)/2
-        return isUserSelf ?
-            CGRect(x: margin, y: margin, width: FTDefaultMessageBubbleAudioIconHeight, height: FTDefaultMessageBubbleAudioIconHeight) :
-            CGRect(x: self.frame.size.width - FTDefaultMessageBubbleAudioHeight + margin , y: margin, width: FTDefaultMessageBubbleAudioIconHeight, height: FTDefaultMessageBubbleAudioIconHeight)
+        return
+          CGRect(x: bubleFrame.origin.x + margin, y: margin, width: FTDefaultMessageBubbleAudioIconHeight, height: FTDefaultMessageBubbleAudioIconHeight)
         
     }
     fileprivate func getMediaInfoLabelFrame(_ isUserSelf : Bool) -> CGRect {

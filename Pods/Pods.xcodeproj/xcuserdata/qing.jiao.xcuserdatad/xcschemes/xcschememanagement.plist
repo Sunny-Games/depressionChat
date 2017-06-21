@@ -19,11 +19,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Kingfisher.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-DepressionChat.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,17 +32,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2F0C0F810568D3E82219429D9D870F04</key>
+		<key>2DB86C510A675C82B3E87D7DC6FD2885</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>3A7D005180DC7B5FF5189B65E7F2E8B7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>81F79056CB9AC25CB63FAFDA93BFB4C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
