@@ -27,8 +27,6 @@ If you want to test your memory, try to recall what you were worrying about one 
 Fall seven times, stand up eight. ~ Japanese proverb
 Depression is a prison where you are both the suffering prisoner and the cruel jailer. ~ Dorothy Rowe
 The greatest discovery of my generation is that a human being can change his life by changing his attitude of mind. ~ William James
-Many of life's failures are experienced by people who did not realize how close they were to success when they gave up. ~ Thomas Edison
-You miss % of the shots you don't take. ~ Wayne Gretzky
 The most beautiful people we have known are those who have known defeat, known suffering, known struggle, known loss, and have found their way out of the depths. These persons have an appreciation, a sensitivity, and an understanding of life that fills them with compassion, gentleness, and a deep loving concern. Beautiful people do not just happen. ~ Elisabeth Kübler-Ross
 The darkest hour has only sixty minutes.
 Accept challenges, so that you may feel the exhilaration of victory. ~ George S. Patton
@@ -68,8 +66,6 @@ The greatest degree of inner tranquility comes from the development of love and 
 
 Have patience with all things, but chiefly have patience with yourself. Do not lose courage in considering your own imperfections but instantly set about remedying them -- every day begin the task anew
 
-I think, therefore I am.
-
 Truly, it is in the darkness that one finds the light, so when we are in sorrow, then this light is nearest of all to us.
 
 You shall be free indeed when your days are not without a care nor your nights without want and a grief. But rather when these things girdle your life and yet you rise above them naked and unbound.
@@ -107,8 +103,6 @@ The soul is dyed the color of its thoughts. Think only on those things that are 
 
 No matter how dark the moment, love and hope are always possible. ~ George Chakiris
 
-It is often in the darkest skies that we see the brightest stars. ~ Richard Evans
-
 Even in the midst of devastation, something within us always points the way to freedom. ~ Sharon Salzberg
 
 In a moment of clarity, out of nowhere, I saw that when I believed my thoughts I suffered and when I questioned my thoughts I didn’t suffer, and I have come to see that this is true for every human being. ~ Bryon Katie
@@ -136,3 +130,4 @@ The best way out is always through. ~ Robert Frost
 The power is in you. The answer is in you. And you are the answer to all your searches: you are the goal. You are the answer. It’s never outside.  ~ Eckhart Tolle
 
 If all you can do is crawl, start crawling. ~ Rumi
+

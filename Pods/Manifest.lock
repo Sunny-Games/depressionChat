@@ -8,17 +8,30 @@ PODS:
   - FTIndicator/FTProgressIndicator (1.2.0)
   - FTIndicator/FTToastIndicator (1.2.0)
   - IQKeyboardManager (4.0.10)
+  - RxCocoa (3.2.0):
+    - RxSwift (~> 3.1)
+  - RxSwift (3.2.0)
+  - SnapKit (3.2.0)
+  - UIColor_Hex_Swift (3.0.2)
 
 DEPENDENCIES:
   - FTImageSize
   - FTIndicator
   - IQKeyboardManager (~> 4.0.4)
+  - RxCocoa (~> 3.2.0)
+  - RxSwift (~> 3.2.0)
+  - SnapKit (~> 3.2.0)
+  - UIColor_Hex_Swift (~> 3.0.2)
 
 SPEC CHECKSUMS:
   FTImageSize: 29c6fc0830dbe33973286148a8e32cd582a9f26d
   FTIndicator: e1c035b99b8df1b1a40702b37cdc12fac5dd057c
   IQKeyboardManager: 593ee99b88381f4b9ccb22bd680f22606351bd41
+  RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
+  RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
 
-PODFILE CHECKSUM: e64ab8528d01f99a0d55c48f68bfe103b1a2ea05
+PODFILE CHECKSUM: de87d2bc5ee254e8b172ec269f8872e5b966478d
 
 COCOAPODS: 1.2.0

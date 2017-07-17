@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UIColor_Hex_Swift
 
 /**
  FTChatMessageType
@@ -44,7 +45,7 @@ let FTDefaultInputViewMargin : CGFloat = 8.0
 let FTDefaultInputViewTextCornerRadius : CGFloat = 8.0
 let FTDefaultInputViewMaxHeight : CGFloat = 150.0
 let FTDefaultInputTextViewEdgeInset: UIEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5)
-let FTDefaultInputViewBackgroundColor : UIColor = UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1)
+
 //MARK: - Accessory -
 let FTDefaultAccessoryViewHeight : CGFloat = 216.0
 let FTDefaultAccessoryViewItemWidth : CGFloat = 60.0
@@ -76,8 +77,8 @@ let FTDefaultSectionHeight : CGFloat = 40.0
 let FTDefaultIconSize : CGFloat = 50.0
 let FTDefaultMessageRoundCorner : CGFloat = 16.0
 let FTDefaultFontSize : UIFont = UIFont.systemFont(ofSize: 14)
-let FTDefaultOutgoingColor : UIColor = UIColor(red: 1/255, green: 123/255, blue: 225/255, alpha: 1)
-let FTDefaultIncomingColor : UIColor = UIColor(red: 229/255, green: 229/255, blue: 234/255, alpha: 1)
+let FTDefaultOutgoingColor : UIColor = UIColor(hex6: 0xAFDFF6) 
+let FTDefaultIncomingColor : UIColor = UIColor(hex6: 0xF9ACAF)
 //MARK: - Animation -
 let FTDefaultMessageDefaultAnimationDuration : Double = 0.3
 

@@ -133,11 +133,9 @@ extension FTChatMessageBubbleItem {
       bubbleHeight = max(textRect.height + FTDefaultTextTopMargin*2, FTDefaultMessageRoundCorner*2)
     case .image:
       if aMessage.isKind(of: FTChatMessageImageModel.classForCoder()) {
-        if let image : UIImage = (aMessage as! FTChatMessageImageModel).image {
+        if let image : UIImage = UIImage(named: aMessage.messageText) {
           bubbleHeight = FTImageSize.convertSizeForMessageBubble(size: image.size).height
-        }else if let imageUrl : String = (aMessage as! FTChatMessageImageModel).imageUrl {
-          bubbleHeight = FTImageSize.getImageSizeFromImageURL(imageUrl, perferdWidth: FTDefaultMessageBubbleImageWidth, maxHeight: FTDefaultMessageBubbleImageHeight).height
-        }else{
+        } else{
           bubbleHeight = FTDefaultMessageBubbleImageHeight
         }
       }else{

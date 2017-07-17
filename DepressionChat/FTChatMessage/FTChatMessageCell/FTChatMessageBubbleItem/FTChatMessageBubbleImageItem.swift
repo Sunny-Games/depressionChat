@@ -26,7 +26,8 @@ class FTChatMessageBubbleImageItem: FTChatMessageBubbleItem {
     layer.frame = self.bounds
     layer.contentsScale = UIScreen.main.scale
     layer.contentsGravity = kCAGravityResizeAspectFill
-    layer.backgroundColor = aMessage.messageSender.isUserSelf ? FTDefaultOutgoingColor.cgColor : FTDefaultIncomingColor.cgColor
+    
+    layer.backgroundColor = UIColor.clear.cgColor
     self.layer.addSublayer(layer)
     
     if let image = UIImage(named : message.messageText) {

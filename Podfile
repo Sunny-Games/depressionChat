@@ -9,5 +9,9 @@ target 'DepressionChat' do
   pod 'FTIndicator'
   pod 'FTImageSize'
   pod 'IQKeyboardManager'    , '~> 4.0.4'
+  pod 'UIColor_Hex_Swift'    , '~> 3.0.2'
+  pod 'SnapKit'      		 , '~> 3.2.0'
+  pod 'RxSwift', '~> 3.2.0'
+  pod 'RxCocoa', '~> 3.2.0'
 
 end

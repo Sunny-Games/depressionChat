@@ -48,6 +48,8 @@ class FTChatMessageTableViewController: UIViewController, UITableViewDelegate,UI
     tableView.delegate = self
     tableView.dataSource = self
     
+    tableView.backgroundColor = DesignColor.white
+
     let footer = UIView(frame: CGRect( x: 0, y: 0, width: FTScreenWidth, height: FTDefaultInputViewHeight))
     tableView.tableFooterView = footer
     
@@ -75,7 +77,7 @@ class FTChatMessageTableViewController: UIViewController, UITableViewDelegate,UI
   }
   
   
-  private func addNewMessage(_ message : FTChatMessageModel) {
+  func addNewMessage(_ message : FTChatMessageModel) {
     chatMessageDataArray.append(message);
     self.origanizeAndReload()
     self.scrollToBottom(true)
@@ -84,11 +86,19 @@ class FTChatMessageTableViewController: UIViewController, UITableViewDelegate,UI
   internal func customerAddNewMessage(_ message : FTChatMessageModel) {
     addNewMessage(message)
     
-    let reply = findAReply(inMessage: message)
-    addNewMessage(reply)
+    let reply2 = findImageReply(inMessage: message)
+    addNewMessage(reply2)
+    
+    let reply1 = findMsgReply(inMessage: message)
+    addNewMessage(reply1)
   }
   
-  func findAReply(inMessage: FTChatMessageModel) -> FTChatMessageModel {
+  func findMsgReply(inMessage: FTChatMessageModel) -> FTChatMessageModel {
+    return FTChatMessageModel()
+  }
+  
+  
+  func findImageReply(inMessage: FTChatMessageModel) -> FTChatMessageModel {
     return FTChatMessageModel()
   }
   

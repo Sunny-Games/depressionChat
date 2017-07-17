@@ -26,7 +26,7 @@ class FTChatMessageBubbleTextItem: FTChatMessageBubbleItem {
         messageLabel = UILabel(frame: self.getTextRectWithSize(frame.size, isUserSelf: aMessage.isUserSelf));
         messageLabel.text = message.messageText
         messageLabel.numberOfLines = 0
-        messageLabel.textColor = aMessage.messageSender.isUserSelf ? UIColor.white : UIColor.black
+        messageLabel.textColor = UIColor.black
         messageLabel.font = FTDefaultFontSize
         self.addSubview(messageLabel)
         let attributeString = NSMutableAttributedString(attributedString: messageLabel.attributedText!)
