@@ -18,7 +18,7 @@ let customer = FTChatMessageUserModel.init(id: "2", name: "LiuFengting", icon_ur
 class ChatTableViewController: FTChatMessageTableViewController, FTChatMessageRecorderViewDelegate{
   var quotes: [String] = []
   let titleHeartBtn = UIButton()
-
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -30,32 +30,42 @@ class ChatTableViewController: FTChatMessageTableViewController, FTChatMessageRe
     readTxt()
     
     view.backgroundColor = DesignColor.white
+    
   }
   
-  func showLoveRain() {
-    var beginFrame = titleHeartBtn.frame
-    beginFrame.size = CGSize(width: 30, height: 30)
-    beginFrame.origin.y = titleHeartBtn.frame.origin.y + 20
-    beginFrame.origin.x = view.frame.size.width / 2 - 30 / 2
+  func showLoveRain(_ point: CGPoint? = nil) {
+    var beginFrame: CGRect
+    let heartSize = CGSize(width: 30, height: 30)
     
+    if let point = point {
+      beginFrame = CGRect(x: point.x - heartSize.width / 2, y: point.y, width: heartSize.width, height: heartSize.height)
+    } else {
+      beginFrame  = titleHeartBtn.frame
+      beginFrame.size = heartSize
+      beginFrame.origin.y = titleHeartBtn.frame.origin.y + 20
+      beginFrame.origin.x = view.frame.size.width / 2 - 30 / 2
+    }
     
     let oneIV = UIImageView()
     oneIV.image = UIImage(named: "RedHeart")
     oneIV.clipsToBounds = true
     view.addSubview(oneIV)
-
+    
     oneIV.frame = beginFrame
-
+    
     var tt = oneIV.frame
-    tt.origin.y = view.frame.size.height
+    tt.origin.y = view.frame.size.height * CGFloat(arc4random_uniform(200)) / 200
     UIView.animate(withDuration: 1, animations: {
       oneIV.frame = tt
     }, completion: { _ in
-      oneIV.removeFromSuperview()
+    //  oneIV.removeFromSuperview()
     })
   }
   
   func showGreeting() {
+    let message1 = FTChatMessageImageModel(data: "image67.jpg", time: "4.12 21:09:52", from: replySender, type: .image)
+    addNewMessage(message1)
+    
     let name = DataContainer.shared.name ?? ""
     let message2 = FTChatMessageModel(data: "Dear \(name), how are you today? Quite enjoy listening to you.", time: "x", from: replySender, type: .text)
     
@@ -63,7 +73,7 @@ class ChatTableViewController: FTChatMessageTableViewController, FTChatMessageRe
   }
   
   func loadInitMessages() -> [FTChatMessageModel] {
-    let message1 = FTChatMessageImageModel(data: "image36.jpg", time: "4.12 21:09:52", from: replySender, type: .image)
+    let message1 = FTChatMessageImageModel(data: "image3.jpg", time: "4.12 21:09:52", from: replySender, type: .image)
     
     let name = DataContainer.shared.name ?? ""
     let message2 = FTChatMessageModel(data: "Dear \(name), how are you? I will be a very good listener, and keep the secret.", time: "x", from: replySender, type: .text)
@@ -114,24 +124,34 @@ class ChatTableViewController: FTChatMessageTableViewController, FTChatMessageRe
       make.height.equalTo(47)
       make.centerX.equalTo(conV)
     }
-    
-    let menuButton = UIButton()
-    menuButton.setImage(UIImage(named: "menu"), for: .normal)
-    conV.addSubview(menuButton)
-    menuButton.snp.makeConstraints { make in
-      make.centerY.equalTo(titleHeartBtn)
-      make.leading.equalTo(16)
-      make.width.equalTo(30)
-      make.height.equalTo(30)
-    }
-    
     _ = titleHeartBtn.rx.tap.subscribe(onNext: { [unowned self] _ in
       self.showLoveRain()
     })
     
+    let menuButton = UIButton()
+//    menuButton.setImage(UIImage(named: "menu"), for: .normal)
+    menuButton.setTitle("Next", for: .normal)
+    conV.addSubview(menuButton)
+    menuButton.snp.makeConstraints { make in
+      make.centerY.equalTo(titleHeartBtn).offset(7)
+      make.leading.equalTo(16)
+      make.width.equalTo(40)
+      make.height.equalTo(30)
+    }
+    _ = menuButton.rx.tap.subscribe(onNext: { [unowned self] _ in
+      self.findAReply()
+    })
+    
+    let tapG = UITapGestureRecognizer(target: self, action: #selector(didTapHeader(tapG:)))
+    conV.addGestureRecognizer(tapG)
   }
   
-  override func findMsgReply(inMessage: FTChatMessageModel) -> FTChatMessageModel {
+  func didTapHeader(tapG: UITapGestureRecognizer) {
+    let touchPoint = tapG.location(in: self.view)
+    self.showLoveRain(touchPoint)
+  }
+  
+  override func findMsgReply() -> FTChatMessageModel {
     let reply: FTChatMessageModel
     let randomIndex = Int(arc4random_uniform(UInt32(quotes.count)))
     let text = quotes[randomIndex]
@@ -140,16 +160,11 @@ class ChatTableViewController: FTChatMessageTableViewController, FTChatMessageRe
     return reply
   }
   
-  override func findImageReply(inMessage: FTChatMessageModel) -> FTChatMessageModel {
+  override func findImageReply() -> FTChatMessageModel {
     let reply: FTChatMessageModel
-    let lot = arc4random_uniform(6)
     
-    let imageName: String
-    if lot <= 1 {
-      imageName = "png\(max(1, arc4random_uniform(9))).png"
-    } else {
-      imageName = "image\(max(1, arc4random_uniform(63))).jpg"
-    }
+    let imageName = "image\(max(1, arc4random_uniform(89))).jpg"
+    
     print(imageName)
     reply = FTChatMessageImageModel(data: imageName, time: "x", from: replySender, type: .image)
     return reply

@@ -86,19 +86,22 @@ class FTChatMessageTableViewController: UIViewController, UITableViewDelegate,UI
   internal func customerAddNewMessage(_ message : FTChatMessageModel) {
     addNewMessage(message)
     
-    let reply2 = findImageReply(inMessage: message)
+    findAReply()
+  }
+  
+  func findAReply() {
+    let reply2 = findImageReply()
     addNewMessage(reply2)
     
-    let reply1 = findMsgReply(inMessage: message)
+    let reply1 = findMsgReply()
     addNewMessage(reply1)
   }
   
-  func findMsgReply(inMessage: FTChatMessageModel) -> FTChatMessageModel {
+  func findMsgReply() -> FTChatMessageModel {
     return FTChatMessageModel()
   }
   
-  
-  func findImageReply(inMessage: FTChatMessageModel) -> FTChatMessageModel {
+  func findImageReply() -> FTChatMessageModel {
     return FTChatMessageModel()
   }
   
